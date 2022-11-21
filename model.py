@@ -1,8 +1,8 @@
 import streamlit as st
 import pickle
-
+import joblib
 #load the saved machine learning model
-loaded_model = pickle.load(open('ddos_model.pkl', 'rb'))
+loaded_model = joblib.load(open('ddos_model.pkl', 'rb'))
 
 #function that return the prediction 
 def label_predict(a):
